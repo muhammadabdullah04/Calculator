@@ -22,7 +22,7 @@ def calculate():
     except:
         st.session_state.exp = "Error"
 
-colA, colB, colC = st.columns([6,1,1])
+colA, colB, colC = st.columns([8,2,2], gap="small")
 
 with colA:
     st.text_input("", key="exp")
@@ -35,7 +35,7 @@ with colC:
 
 st.divider()
 
-
+# ---------- Buttons ----------
 rows = [
     ["7","8","9","/"],
     ["4","5","6","*"],
@@ -44,7 +44,7 @@ rows = [
 ]
 
 for row in rows:
-    cols = st.columns(4)
+    cols = st.columns(4, gap="small")
 
     for i, key in enumerate(row):
 
