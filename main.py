@@ -22,11 +22,8 @@ def calculate():
     except:
         st.session_state.exp = "Error"
 
-# ✅ One input box: keyboard typing will show here automatically
-st.session_state.exp = st.text_input(
-    "Type with keyboard OR click buttons:",
-    value=st.session_state.exp
-)
+# ✅ ONE input box (keyboard typing will show here)
+st.text_input("Type with keyboard OR click buttons:", key="exp")
 
 st.divider()
 
