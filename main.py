@@ -31,7 +31,7 @@ def calculate():
 
 # Keyboard input
 st.text_input(
-    "Type with keyboard or use buttons:",
+    "",
     key="input_box",
     value=st.session_state.exp,
     on_change=update_from_keyboard
